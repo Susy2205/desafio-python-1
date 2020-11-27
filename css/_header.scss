@@ -16,15 +16,16 @@
         
         
         ul{
-        justify-content: space-between;
-        color: hsl(176, 68%,64%)
-         
+            justify-content: space-between;
+            color: hsl(176, 68%,64%)
+            
         }
           
         .section-principal {
             /*display: flex;*/
             border: 5px solid green;
-            img{max-width: 100%;
+            img{
+                max-width: 100%;
             
             }
 
@@ -33,9 +34,7 @@
             justify-content: center;
         
         }
+    }
         
     
 }
-
-
-

@@ -1,0 +1,129 @@
+.footer{
+    background-color: $background-footer;
+    color: $color-letra;
+    padding: 1rem;
+    .logo_footer{
+        margin-bottom: 2rem;
+    }
+    ul{
+        text-decoration: none;
+        list-style: none;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: $color-letra;
+        }
+    }
+    .menu_footer {  
+        display: flex;
+        flex-direction: column;
+        .direction{
+            display: flex;
+            align-items: flex-start;
+            margin-top: 2rem;
+            p{
+                margin-left: 1rem;
+            }
+        }
+
+        .footer_contact{
+            li{
+                position: relative;
+                padding-left: 2rem;
+                margin-top: 1rem;
+            }
+            img{
+                margin-right: 1rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .links_footer{
+        margin-top: 2rem;
+        li {
+            margin-top: 0.75rem;
+        }
+    }
+    .social_icons{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 2rem;
+        a{
+            width: 32px;
+            height: 32px;
+            border: 1px solid $color-letra;
+            border-radius: 50%;
+            margin: 0 .5em;
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            font-size: 1rem;
+        }
+    }
+    @media screen and (min-width: $break-large){
+        &{
+            padding: 2rem;
+        }
+
+        .menu_footer{
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .direction {
+                width: 30%;
+                margin-top: 0;
+                padding-right: 1rem;
+            }
+            .footer_contact{
+                width: 30%;
+                padding-right: 1rem;
+            }
+            .links_footer{
+                width:20%;
+                margin-top: 0;
+                padding: .5rem;
+            }
+            .social_icons{
+                width: 100%;
+            }
+        }
+    }
+    
+    @media screen and (min-width: $break-xlarge){
+        .menu_footer{
+
+            flex-wrap: no-wrap;
+            align-items: flex-start;
+            
+            .direction {
+                width: 30%;
+                padding-right: 2rem;
+            }
+            .footer_contact{
+                width: 25%;
+                padding-right: 1rem;
+                li{
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+            .links_footer{
+                width: 15%;
+                margin-top: 0;
+                padding: 0 .5rem;
+                li {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+            .social_icons{
+                width: 15%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
