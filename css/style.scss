@@ -1,0 +1,28 @@
+
+
+.header{
+    background-color: hsl(218, 28%,13%);
+    margin: auto;
+      
+    
+}
+
+.header-menu{
+    background-color: hsl(217,28%,15%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100px;
+    
+    
+    ul{
+    justify-content: space-between;
+    color: hsl(176, 68%,64%)
+     
+    }
+    .section-principal {
+        display: flex;
+        justify-content: center;
+        
+    }
+}
