@@ -19,10 +19,20 @@ main {
 
 .header {
   background-color: #181f2a;
-  margin: auto;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header-menu {
+.header .header-menu {
   background-color: #181f2a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,23 +44,30 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100px;
+  /*height: auto;*/
+  margin: auto;
+  border: 2px solid yellow;
+  /*flex-direction: column;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header-menu ul {
+.header .header-menu ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #65e2d9;
 }
 
-.header-menu .section-principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.header .header-menu .section-principal {
+  /*display: flex;*/
+  border: 5px solid green;
+}
+
+.header .header-menu .section-principal img {
+  max-width: 100%;
+  border: 1px solid yellow;
 }
 
 @media screen and (min-width: 768px) {
