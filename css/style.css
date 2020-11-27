@@ -298,11 +298,6 @@ form input[type="email"] {
   display: inline-block;
 }
 
-form input[type="email"]:after {
-  content: "*";
-  color: red;
-}
-
 form input[type="submit"] {
   font-weight: bold;
   padding: 8px 16px;

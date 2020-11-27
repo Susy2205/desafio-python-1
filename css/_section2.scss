@@ -108,10 +108,6 @@ form{
         background-color:#f6f6f6;
         margin:20px 0px;
         display:inline-block;
-        &:after{
-            content: "*";
-            color: red;
-        }
     }
     input[type="submit"]{
         font-weight:bold;
