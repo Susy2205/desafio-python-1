@@ -11,10 +11,12 @@ body {
   width: 100vw;
   font-family: "Open Sans";
   font-size: 14px;
+  color: white;
 }
 
 main {
   margin: 20px 20px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +40,6 @@ main {
 }
 
 .section_2 .article-contenido {
-  color: white;
   text-align: left;
   margin: 0 auto;
   display: -webkit-box;

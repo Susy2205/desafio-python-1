@@ -7,9 +7,10 @@
 body{
     background-repeat: repeat; 
     background-color: $background-main;
-    width: 100vw;
+    width: 100%;
     font-family: $font;
     font-size: 14px;
+    color: $color-letra;
 }
 
 main{
