@@ -249,6 +249,7 @@ img {
 
 .section3 .article-section3 {
   /* border: 1px solid green; */
+  border-radius: 5px;
   padding: 20px;
   background-color: #202a3c;
   margin: 25px 10px;
