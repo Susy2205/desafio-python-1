@@ -146,17 +146,17 @@ form{
         font-weight:bold;
         padding:8px 16px;
         height: 40px;
-        border:1px solid  hsl(198, 60%, 50%);
+        border:1px solid  $color-link;
         border-radius:50px;
         color:#fff;
-        background-color: hsl(198, 60%, 50%);
+        background-color: $color-link;
         &:hover{
             cursor: pointer;
         }
     }                    
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: $break-large) {
     .section3 {
         display: flex;
         flex-direction: row;
@@ -169,6 +169,7 @@ form{
         .article-section3{
             margin: 40px 10px;
             padding: 20px 15px 20px 15px;
+            box-shadow: 5px 10px 8px hsl(219, 30%, 18%);
             .parrafo-profile{
                 font-size: small;
                 line-height: 1.3;
