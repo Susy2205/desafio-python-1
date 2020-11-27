@@ -7,11 +7,16 @@
 body{
     background-repeat: repeat; 
     background-color: $background-main;
-    width: 100vw;
+    width: 100%;
     font-family: $font;
     font-size: 14px;
 }
 
-main{
-    margin: 20px 20px;
+img{
+    max-width: 100%;
+
 }
+
+/*main{
+    margin: 20px 20px;
+}*/
