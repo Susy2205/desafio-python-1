@@ -8,15 +8,149 @@
 body {
   background-repeat: repeat;
   background-color: #181f2a;
-  width: 100vw;
+  width: 100%;
   font-family: "Open Sans";
   font-size: 14px;
   color: white;
 }
 
-main {
-  margin: 20px 20px;
-  position: relative;
+img {
+  max-width: 100%;
+}
+
+/*main{
+    margin: 20px 20px;
+}*/
+.header {
+  background-color: #181f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-menu {
+  background-color: #181f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 20px 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-menu img {
+  max-width: 100px;
+}
+
+.header .header-menu ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-menu ul li {
+  padding-left: 10px;
+}
+
+.header .header-menu .section-principal {
+  /*display: flex;*/
+  border: 5px solid green;
+  /*flex-direction: column;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .section-principal {
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.header .section-principal .imagen-principal {
+  margin-bottom: 40px;
+}
+
+.header .section-principal h1 {
+  margin-bottom: 20px;
+}
+
+.header .section-principal p {
+  margin-bottom: 20px;
+}
+
+.header .section-principal .button-started {
+  background: -webkit-gradient(linear, left top, right top, from(#64e1d9), to(#339ecc));
+  background: linear-gradient(90deg, #64e1d9 0%, #339ecc 100%);
+  color: white;
+  border-radius: 30px;
+  padding: 16px 50px;
+  border: none;
+  font-weight: 600;
+}
+
+.content-card-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-card-features .card-feature {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.content-card-features .card-feature img {
+  margin-bottom: 20px;
+}
+
+.content-card-features .card-feature h2 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-card-features {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content-card-features .card-feature {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,4 +195,163 @@ main {
   border-bottom: 3px solid #339ecc;
   width: 160px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer {
+  background-color: #0d1624;
+  color: white;
+  padding: 1rem;
+}
+
+.footer .logo_footer {
+  margin-bottom: 2rem;
+}
+
+.footer ul {
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .menu_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .menu_footer .direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.footer .menu_footer .direction p {
+  margin-left: 1rem;
+}
+
+.footer .menu_footer .footer_contact li {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.footer .menu_footer .footer_contact img {
+  margin-right: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer .links_footer {
+  margin-top: 2rem;
+}
+
+.footer .links_footer li {
+  margin-top: 0.75rem;
+}
+
+.footer .social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer .social_icons a {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 .5em;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem;
+  }
+  .footer .menu_footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .menu_footer .direction {
+    width: 30%;
+    margin-top: 0;
+    padding-right: 1rem;
+  }
+  .footer .menu_footer .footer_contact {
+    width: 30%;
+    padding-right: 1rem;
+  }
+  .footer .menu_footer .links_footer {
+    width: 20%;
+    margin-top: 0;
+    padding: .5rem;
+  }
+  .footer .menu_footer .social_icons {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .menu_footer {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .menu_footer .direction {
+    width: 30%;
+    padding-right: 2rem;
+  }
+  .footer .menu_footer .footer_contact {
+    width: 25%;
+    padding-right: 1rem;
+  }
+  .footer .menu_footer .footer_contact li {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .footer .menu_footer .links_footer {
+    width: 15%;
+    margin-top: 0;
+    padding: 0 .5rem;
+  }
+  .footer .menu_footer .links_footer li {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .footer .menu_footer .social_icons {
+    width: 15%;
+    margin-top: 0;
+  }
+}
