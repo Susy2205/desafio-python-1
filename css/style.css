@@ -294,7 +294,7 @@ form input[type="email"] {
   border: 5px solid #f6f6f6;
   border-radius: 50px;
   background-color: #f6f6f6;
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: inline-block;
 }
 
@@ -321,7 +321,7 @@ form input[type="submit"]:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 0px 0px 30% 0px;
+    margin: 0px 20px 40% 0px;
   }
   .section3 .quotes {
     top: 10%;
@@ -351,7 +351,7 @@ form input[type="submit"]:hover {
   .section3 .section-access {
     width: 60%;
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 20%;
   }
   .section3 .section-access .parrafo-access {
@@ -376,10 +376,31 @@ form input[type="submit"]:hover {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
+  .section3 {
+    margin: 0px 0px 20% 0px;
+  }
+  .section3 .quotes {
+    left: 7%;
+  }
   .section3 .section-access {
-    top: 140%;
-    left: 20%;
+    width: 50%;
+    top: 120%;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: break-xlarge) {
+  .section3 {
+    margin: 0px 0px 20% 0px;
+  }
+  .section3 .quotes {
+    left: 5%;
+  }
+  .section3 .section-access {
+    width: 50%;
+    top: 160%;
+    left: 25%;
   }
 }
 
