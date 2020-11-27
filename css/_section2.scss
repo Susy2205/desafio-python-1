@@ -3,6 +3,26 @@
     margin: 20px 20px;
     @media screen and (min-width: $break-large) {
         display: flex;
+        .article-contenido{
+            h2{
+                width: 50%;
+            }
+            p{
+                width: 95%;
+            }
+        }
+    }
+
+    @media screen and (min-width: $break-xlarge) {
+        display: flex;
+        .article-contenido{
+            h2{
+                width: 30%;
+            }
+            p{
+                width: 65%;
+            }
+        }
     }
 
     .article-images{
@@ -180,7 +200,7 @@ form{
 
 @media only screen and (min-width: 1024px) {
     .section3 {
-        margin: 0px 0px 20% 0px;
+        margin: 0px 20px 20% 0px;
         .quotes{
             left: 7%;
         }
@@ -195,7 +215,7 @@ form{
 
 @media only screen and (min-width: break-xlarge) {
     .section3 {
-        margin: 0px 0px 20% 0px;
+        margin: 0px 20px 20% 0px;
         .quotes{
             left: 5%;
         }

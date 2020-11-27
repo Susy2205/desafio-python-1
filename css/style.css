@@ -163,6 +163,26 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
+  .section_2 .article-contenido h2 {
+    width: 50%;
+  }
+  .section_2 .article-contenido p {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section_2 .article-contenido h2 {
+    width: 30%;
+  }
+  .section_2 .article-contenido p {
+    width: 65%;
+  }
 }
 
 .section_2 .article-images {
@@ -378,7 +398,7 @@ form input[type="submit"]:hover {
 
 @media only screen and (min-width: 1024px) {
   .section3 {
-    margin: 0px 0px 20% 0px;
+    margin: 0px 20px 20% 0px;
   }
   .section3 .quotes {
     left: 7%;
@@ -392,7 +412,7 @@ form input[type="submit"]:hover {
 
 @media only screen and (min-width: break-xlarge) {
   .section3 {
-    margin: 0px 0px 20% 0px;
+    margin: 0px 20px 20% 0px;
   }
   .section3 .quotes {
     left: 5%;
