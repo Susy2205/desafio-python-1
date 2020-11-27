@@ -153,6 +153,10 @@ img {
   }
 }
 
+.section_2 {
+  margin: 20px 20px;
+}
+
 @media screen and (min-width: 768px) {
   .section_2 {
     display: -webkit-box;
@@ -194,6 +198,194 @@ img {
   text-decoration: none;
   border-bottom: 3px solid #339ecc;
   width: 160px;
+}
+
+.section3 {
+  position: relative;
+  margin: 20px 20px;
+}
+
+.section3 .quotes {
+  position: relative;
+  top: 35px;
+  left: 10px;
+  /* border: 2px solid green; */
+  z-index: -1;
+}
+
+.section3 .article-section3 {
+  /* border: 1px solid green; */
+  padding: 20px;
+  background-color: #202a3c;
+  margin: 25px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section3 .article-section3 .parrafo-profile {
+  line-height: 2;
+}
+
+.section3 .article-section3 .image-section3 {
+  border-radius: 70px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.section3 .article-section3 .name-profile {
+  margin: 10px 5px 0px;
+}
+
+.section3 .article-section3 .name-profile .name {
+  letter-spacing: 0.2em;
+  word-spacing: 0.25em;
+  font-weight: bold;
+}
+
+.section3 .article-section3 .name-profile .profile {
+  font-size: x-small;
+  letter-spacing: .19em;
+  word-spacing: .2em;
+}
+
+.section3 .section-access {
+  padding: 40px;
+  background-color: #202a3c;
+  margin: 25px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3 .section-access .access-header {
+  text-align: center;
+}
+
+.section3 .section-access .parrafo-access {
+  text-align: center;
+  line-height: 2;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+form input[type="email"] {
+  height: 40px;
+  border: 5px solid #f6f6f6;
+  border-radius: 50px;
+  background-color: #f6f6f6;
+  margin: 20px 0px;
+  display: inline-block;
+}
+
+form input[type="email"]:after {
+  content: "*";
+  color: red;
+}
+
+form input[type="submit"] {
+  font-weight: bold;
+  padding: 8px 16px;
+  height: 40px;
+  border: 1px solid #339ecc;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #339ecc;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px 0px 30% 0px;
+  }
+  .section3 .quotes {
+    top: 10%;
+    left: 10%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .section3 .article-section3 {
+    margin: 40px 10px;
+    padding: 20px 15px 20px 15px;
+  }
+  .section3 .article-section3 .parrafo-profile {
+    font-size: small;
+    line-height: 1.3;
+  }
+  .section3 .article-section3 .name-profile .name {
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: small;
+  }
+  .section3 .article-section3 .name-profile .profile {
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: xX-small;
+  }
+  .section3 .section-access {
+    width: 60%;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+  }
+  .section3 .section-access .parrafo-access {
+    line-height: 1.5;
+    font-size: small;
+  }
+  form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: start;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  form input[type="email"] {
+    margin: 0px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section3 .section-access {
+    top: 140%;
+    left: 20%;
+  }
 }
 
 .footer {
@@ -355,3 +547,4 @@ img {
     margin-top: 0;
   }
 }
+/*# sourceMappingURL=style.css.map */
