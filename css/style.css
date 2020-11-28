@@ -22,7 +22,7 @@ img {
     margin: 20px 20px;
 }*/
 .header {
-  background-color: #181f2a;
+  background-color: #1B2330;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +36,6 @@ img {
 }
 
 .header .header-menu {
-  background-color: #181f2a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,6 +84,10 @@ img {
   padding: 40px 20px;
   color: white;
   text-align: center;
+  background-image: url("/assets/images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
 }
 
 .header .section-principal .imagen-principal {
@@ -138,6 +141,10 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  .header .section-principal {
+    background-image: url("/assets/images/bg-curvy-desktop.svg");
+    padding-bottom: 120px;
+  }
   .content-card-features {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

@@ -1,11 +1,10 @@
 .header{
-    background-color: $background-main;
+    background-color: $background-header;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .header-menu{
-        background-color:$background-main;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -44,6 +43,10 @@
         padding: 40px 20px;
         color: $color-letra;
         text-align: center;
+        background-image: url("/assets/images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
         .imagen-principal{
             margin-bottom: 40px;
         }
@@ -89,6 +92,13 @@
 }
 
 @media only screen and( min-width: $break-large){
+    .header{
+        .section-principal{
+            background-image: url("/assets/images/bg-curvy-desktop.svg");
+            padding-bottom: 120px;
+            
+        }
+    }
     .content-card-features{
         flex-direction: row;
         flex-wrap: wrap;
@@ -100,3 +110,4 @@
         }
     }
 }
+
